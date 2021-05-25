@@ -1,0 +1,6 @@
+self\iboot\context\impl\TomcatContainersContext.class
+self\iboot\context\ContainersContext.class
+self\iboot\spi\MyServletContainerInitializer.class
+self\iboot\anno\EnableWebContext.class
+self\iboot\context\ApplicationContext.class
+self\iboot\spi\MyWebApplicationInitializer.class
