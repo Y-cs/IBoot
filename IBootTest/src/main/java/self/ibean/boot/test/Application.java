@@ -1,6 +1,7 @@
 package self.ibean.boot.test;
 
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import self.iboot.context.ApplicationContext;
 
 import java.util.concurrent.CountDownLatch;

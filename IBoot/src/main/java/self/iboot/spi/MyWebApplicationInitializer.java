@@ -17,9 +17,7 @@ public class MyWebApplicationInitializer implements AppInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         // Create and register the DispatcherServlet
-        //基于java代码的方式初始化DispatcherServlet
-        DispatcherServlet servlet = ApplicationContext.getWebApplicationContext().getBean(DispatcherServlet.class);
-//        DispatcherServlet servlet = new DispatcherServlet(ApplicationContext.getWebApplicationContext());
+        DispatcherServlet servlet = new DispatcherServlet(ApplicationContext.getWebApplicationContext());
         ServletRegistration.Dynamic registration = servletContext.addServlet("app", servlet);
         registration.setLoadOnStartup(1);
         registration.addMapping("/*");
