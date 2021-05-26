@@ -25,7 +25,6 @@ public class TomcatContainersContext implements ContainersContext {
     @Override
     public void startWebContextService() throws LifecycleException {
         new Thread(() -> {
-
             Tomcat tomcat = new Tomcat();
             //设置端口
             tomcat.setPort(port);
